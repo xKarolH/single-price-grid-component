@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+/* - Mobile: 375px - Desktop: 1440px*/
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 16px;
+    max-height: fit-content;
+    min-height: 100vh;
+    
+    min-width: fit-content;
+    max-width: auto;
+
+    font-family:'Karla', sans-serif;
+    background-color: hsl(204, 43%, 93%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* ____________CAJA GRANDE___________ */
+.box{
+    width: 600px;
+    margin:10px;
+    line-height: 1.5em;
+    background-color: white;
+    box-shadow: 5px 5px 10px rgb(184, 190, 184);
+    border-radius: 10px;
+    overflow: hidden; 
+
+    display: flex;
+    flex-direction: column;
+
+}
+.boxes div{
+    padding: 30px;
+}
+.boxes{
+    display: flex;
+}
+/* _________ESTILOS GENERALES CAJAS________ */
+.box-one{
+    color:hsl(218, 22%, 67%);
+    flex-grow: 1;
+    padding: 30px;
+}
+.box-two{
+    background-color: hsl(179, 62%, 43%);
+    color:hsl(204, 43%, 93%); 
+    flex-grow: 1;
+    line-height: 2em;
+}
+.box-three{
+    background-color: hsla(179, 62%, 43%, 0.856);
+    color:hsl(204, 43%, 93%); 
+    flex-grow: 1;
+}
+
+/* _________ESTILOS CAJA UNO________ */
+h2{
+    color:hsl(179, 62%, 43%);
+}
+h3{
+    color:hsl(71, 73%, 54%);
+}
+
+/* _________ESTILOS CAJA DOS________ */
+.box-two p:first-child{
+    font-weight: 700;
+}
+.box-two span:first-child{
+    font-weight: 700;
+    font-size: 32px;
+}
+.box-two span:last-child{
+    color:hsla(203, 44%, 93%, 0.8);
+}
+
+button{
+    background-color: hsl(71, 73%, 54%);
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    color:white;
+    border: none;
+    font-weight: 700;
+    box-shadow: 5px 10px 20px hsl(179, 63%, 36%) ;
+    cursor:pointer;
+}
+button:hover{
+    background-color: hsla(71, 73%, 54%, 0.756);
+}
+
+/* _________ESTILOS CAJA TRES________ */
+.box-three p:first-child{
+    font-weight: 700;
+}
+.box-three .info{
+    color:hsla(203, 44%, 93%, 0.8);
+    font-size: 14px;
+}
+
+
+/* __________PIE DE PAGINA_________ */
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    margin: 20px;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media(max-width:375px){
+    .box {
+        width: 80vw;
+        min-width: 300px;
+    }
+    .boxes{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}
+
+@media(min-width:1440px){
+    .boxes{
+        flex-wrap: nowrap;
+    }
+}
